@@ -1,8 +1,9 @@
-package com.banksteel.boot.autoconfigure;
+package com.zhanlu.boot.autoconfigure;
 
-import org.springframework.boot.context.embedded.MultipartConfigFactory;
-import org.springframework.context.annotation.*;
-
+import org.springframework.boot.web.servlet.MultipartConfigFactory;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 import javax.servlet.MultipartConfigElement;
 
 /**
@@ -10,7 +11,7 @@ import javax.servlet.MultipartConfigElement;
  */
 @Configuration
 @ComponentScan(basePackages = {"com.zhanlu.meta"})
-public class BoneAutoConfiguraction {
+public class AppConfiguraction {
 
     /**
      * 附件上传配置
@@ -24,4 +25,5 @@ public class BoneAutoConfiguraction {
         factory.setMaxRequestSize("4096MB");
         return factory.createMultipartConfig();
     }
+
 }
