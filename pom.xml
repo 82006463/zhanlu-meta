@@ -10,41 +10,9 @@
     <packaging>pom</packaging>
     <name>zhanlu-meta-parent</name>
     <url>http://zhanlu.com</url>
-    <inceptionYear>2013</inceptionYear>
-    <description>zhanlu is free workflow.</description>
 
     <modules>
         <module>zhanlu-meta</module>
     </modules>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        
-        <dependency>
-            <groupId>com.zhanlu</groupId>
-            <artifactId>zhanlu-core</artifactId>
-        </dependency>
-    </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <mainClass>com.zhanlu.boot.Main</mainClass>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
 </project>
