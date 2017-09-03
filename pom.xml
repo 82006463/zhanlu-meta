@@ -17,30 +17,33 @@
         <module>zhanlu-meta</module>
     </modules>
 
-    <licenses>
-        <license>
-            <name>Apache License, Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
-        </license>
-    </licenses>
-
-    <scm>
-        <url>git@github.com:82006463/zhanlu-meta.git</url>
-        <connection>scm:git:git@github.com:82006463/zhanlu-meta.git</connection>
-        <developerConnection>scm:git:git@github.com:82006463/zhanlu-meta.git</developerConnection>
-    </scm>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.zhanlu</groupId>
+            <artifactId>zhanlu-core</artifactId>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.0</version>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                    <showWarnings>true</showWarnings>
+                    <mainClass>com.zhanlu.boot.Main</mainClass>
                 </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
