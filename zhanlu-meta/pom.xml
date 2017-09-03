@@ -2,19 +2,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
     <parent>
         <groupId>com.zhanlu</groupId>
         <artifactId>zhanlu-meta-parent</artifactId>
         <version>0.0.1</version>
     </parent>
-
-    <modelVersion>4.0.0</modelVersion>
     <artifactId>zhanlu-meta</artifactId>
-    <packaging>jar</packaging>
     <name>zhanlu-meta</name>
-    <url>https://github.com/82006463/zhanlu-meta</url>
-    <description>zhanlu-meta</description>
 
     <dependencies>
         <dependency>
@@ -25,7 +21,7 @@
         <dependency>
             <groupId>com.zhanlu</groupId>
             <artifactId>zhanlu-core</artifactId>
-            <version>0.0.1</version>
+            <version>${zhanlu.core.version}</version>
         </dependency>
     </dependencies>
 

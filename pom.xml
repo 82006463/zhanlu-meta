@@ -9,16 +9,11 @@
         <artifactId>zhanlu-parent</artifactId>
         <version>0.0.1</version>
     </parent>
-
-    <groupId>com.zhanlu</groupId>
     <artifactId>zhanlu-meta-parent</artifactId>
-    <version>0.0.1</version>
     <packaging>pom</packaging>
     <name>zhanlu-meta-parent</name>
-    <url>http://zhanlu.com</url>
 
     <modules>
         <module>zhanlu-meta</module>
     </modules>
-
 </project>
