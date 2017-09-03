@@ -1,4 +1,4 @@
-package com.banksteel.boot;
+package com.zhanlu.boot;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
